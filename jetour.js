@@ -8,7 +8,7 @@
 
 ====================================
 [rewrite_local]
-^https?:\/\/mobile-consumer\.jetour\.com\.cn\/registerPush\?access_token= url script-request-header https://raw.githubusercontent.com/wf021325/qx/master/task/jetour.js
+^https?:\/\/mobile-consumer\.jetour\.com\.cn\/registerPush\?access_token= url script-request-header https://raw.githubusercontent.com/moocooe/ql/refs/heads/main/jetour.js
 
 [task_local]
 1 0 * * * https://raw.githubusercontent.com/wf021325/qx/master/task/jetour.js, tag=捷途汽车, enabled=true
@@ -17,12 +17,12 @@
 hostname = mobile-consumer.jetour.com.cn
 ====================================
 
-青龙环境变量  jetour_data={"token":"xxxxxxxxxxxxx"}
+青龙环境变量  jetour_token={"token":"xxxxxxxxxxxxx"}
 随便找到url里面有access_token的就是这个token
 */
 
 const $ = new Env("捷途汽车");
-const _key = 'jetour_data';
+const _key = 'jetour_token';
 $.huihui = $.toObj(getEnv(_key)) || {};
 $.is_debug = 'true-';
 $.messages = [];
