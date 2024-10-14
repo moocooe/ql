@@ -11,7 +11,7 @@
 ^https?:\/\/mobile-consumer\.jetour\.com\.cn\/registerPush\?access_token= url script-request-header https://raw.githubusercontent.com/moocooe/ql/refs/heads/main/jetour.js
 
 [task_local]
-1 0 * * * https://raw.githubusercontent.com/wf021325/qx/master/task/jetour.js, tag=捷途汽车, enabled=true
+1 0 * * * https://raw.githubusercontent.com/moocooe/ql/refs/heads/main/jetour.js, tag=捷途汽车2, enabled=true
 
 [mitm]
 hostname = mobile-consumer.jetour.com.cn
