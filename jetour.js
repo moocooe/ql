@@ -21,7 +21,7 @@ hostname = mobile-consumer.jetour.com.cn
 随便找到url里面有access_token的就是这个token
 */
 
-const $ = new Env("捷途汽车");
+const $ = new Env("捷途汽车2");
 const _key = 'jetour_token';
 $.huihui = $.toObj(getEnv(_key)) || {};
 $.is_debug = 'true-';
